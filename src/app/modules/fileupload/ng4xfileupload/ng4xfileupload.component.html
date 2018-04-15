@@ -1,0 +1,9 @@
+<input type="file" multiple name="file" #fileInput [accept]="accept_mime" (change)="onChange($event)"  *ngIf="isMultiple"/>
+<input type="file"  name="file" #fileInput (change)="onChange($event)" *ngIf="!isMultiple" [accept]="accept_mime"/>
+<div class="col-md-12 col-sm-12 col-xs-12">&nbsp;</div>
+<!-- <ul class="preview_image">
+    <li  *ngFor="let src of image_array;let i=index">
+            <i class="fa fa-times-circle close" aria-hidden="true" (click)="removefile(i)"></i>
+          <img [src]="sanitize(src)">
+    </li>
+</ul> -->

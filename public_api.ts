@@ -1,0 +1,1 @@
+export * from './src/app/modules/fileupload/ng4xfileupload.module'
